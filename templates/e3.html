@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+<style media="screen">
+  input {
+    width: 200px;
+    padding: 5px;
+    border-color: black lightblue lightblue black;
+    border-radius: 20px;
+  }
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+</style>
+<body bgcolor = 'lightyellow'>
+  <form class="middle" action="/delete" method="POST">
+    <h3>Enter your details to delete application</h3>
+    <p><input type="tel" name="num1" placeholder="Id..." required><br>
+    <p><input type="email" name="email" placeholder="Email..." required>
+    <p><input type="submit" name="delete" value="Delete"></p>
+  </form>
+</body>
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    #divcard{
+      margin:0 auto;
+      width:50%;
+      background-color:white;
+      margin-top: 50vh;
+      transform: translateY(-50%);
+      box-shadow: 10px 10px 1px 0px rgba(78, 205, 196, .2);
+      box-sizing: ;
+      border-radius:10px
+    }
+    input {
+      width: 25%;
+      padding: 5px;
+      border-color: black lightblue lightblue black;
+      border-radius: 20px;
+    }
+    input[name="loginsubmit"] {
+      margin-bottom: 20px;
+    }
+  </style>
+  <body bgcolor = 'lightyellow'>
+    <form action="/choose" method="post">
+      <div id="divcard" align="center">
+        <h1>Login</h1>
+        <p><input type="tel" name="num1" placeholder="Id..." required><br>
+        <p><input type="email" name="email" placeholder="Email..." required>
+        <p><input type="submit" name="loginsubmit" value="Login"></p>
+      </div>
+    </form>
+  </body>
+</html>

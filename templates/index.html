@@ -1,0 +1,78 @@
+<html>
+  <style media="screen">
+    body, html {
+      margin:0;
+      padding:0;
+      height: 100%;
+      width:100%;
+      min-width:700px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .splitdiv{
+      height:100%;
+      width:50%;
+    }
+
+    #leftdiv{
+      float:left;
+      background-color: white;
+    }
+    #rightdiv{
+      float:right;
+      background-color:lightyellow  ;
+    }
+    #leftdivcard{
+      width:50%;
+      background-color:white;
+      margin-top: 50vh;
+      transform: translateY(-50%);
+    }
+    #rightdivcard{
+      margin:0 auto;
+      width:50%;
+      margin-top: 50vh;
+      transform: translateY(-50%);
+      font-size: 30px;
+    }
+    input {
+      border-radius: 20px;
+      border-color: lightblue;
+      padding: 10px;
+      cursor: pointer;
+      min-width: 100px;
+    }
+  </style>
+  <body>
+    <div style="height:100%;width:100%;display:inline-block">
+
+    <div class="splitdiv" id="leftdiv">
+      <div id="leftdivcard">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/HI/RZ/LK/25904198/106405-metallic-low-res-max-1920w-500x500.jpg" alt="hills" width="200%" height="100%">
+      </div>
+    </div>
+
+    <div class="splitdiv" id="rightdiv">
+      <div id="rightdivcard" align = "center">
+        <p>WELCOME!</p>
+          <form action="/application" method="POST">
+            <input type="Submit" name="apply" value="Application Form">
+          </form>
+          <form action="/e1" method="POST">
+            <input type="submit" name="details" value="Veiw your details">
+          </form>
+          <form action="/e2" method="POST">
+            <input type="submit" name="edit" value="Edit Application">
+          </form>
+          <form action="/e3" method="POST">
+            <input type="submit" name="delete" value="Delete Application">
+          </form>
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
